@@ -1,0 +1,12 @@
+.nav{
+  background-color: black;
+}
+.nav .nav-item .nav-link {
+  color: #fff;
+}
+.bg-img {
+  height: 100vh;
+  background: url(pics/phone.jpg) no-repeat center center/cover;
+  filter: blur(4px);
+  -webkit-filter: blur(4px);
+}
