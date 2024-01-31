@@ -14,8 +14,6 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
   $email = mysqli_real_escape_string($conn, $_POST['email']);
   $pic = $_FILES['pic'];
 
-  // Validate form data (add your validation logic here)
-
   // Picture handling
   $img_path = "./pics/";
   $posted = 'pic';
@@ -76,7 +74,6 @@ $conn->close();
       <input type="email" id="typeEmail" class="form-control" name="email" value="<?php echo $email; ?>" required>
       <label class="form-label" for="typeEmail">Email</label>
     </div>
-
 
     <br><br>
     <label class="form-label" for="customFile">Upload Image</label>
